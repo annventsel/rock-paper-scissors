@@ -1,6 +1,8 @@
-* { margin: 0;
-padding: 0;
-box-sizing: border-box;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background: radial-gradient(circle at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
@@ -18,13 +20,13 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
-    height: 150px;      
+    height: 150px;
 }
 
-.container { 
-    display: flex; 
+.container {
+    display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
 }
 
 .score {
@@ -43,11 +45,12 @@ body {
     margin-left: 20px;
 }
 
-.score p { 
+.score p {
     color: hsl(229, 64%, 46%);
     letter-spacing: 2px;
     line-height: 15px;
 }
+
 .score h1 {
     color: hsl(229, 25%, 31%);
     font-size: 48px;
@@ -59,30 +62,40 @@ body {
     background-color: #fff;
     height: 150px;
     position: absolute;
+    width: 220px;
+    height: 220px;
+}
+
+.hand:hover {
+    cursor: pointer;
 }
 
 .hand-image {
     position: relative;
-    top: 30px;
-    margin-right: 10px;
-    margin-left: 10px;
+    width: 80px;
+    top: 25%;
+    left: 30%;
 }
-.paper {
-    border: 15px solid hsl(230, 89%, 62%);
-    /* margin-right: 20px; */
-    position: relative;
-    left: -200px;
 
+.paper {
+    border: 25px solid hsl(230, 89%, 62%);
+    position: relative;
+    left: -130px;
+    top: -80px
 }
 
 .scissors {
-    border: 15px solid hsl(39, 89%, 49%);
-    margin-left: 20px;
-}  
+    border: 25px solid hsl(39, 89%, 49%);
+    position: relative;
+    left: 0px;
+    top: -80px
+}
 
 .rock {
-    border: 15px solid hsl(349, 71%, 52%);
-    margin-left: 20px;
+    border: 25px solid hsl(349, 71%, 52%);
+    position: relative;
+    left: -80px;
+    top: -50px
 }
 
 .hands {
