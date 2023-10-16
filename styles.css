@@ -55,7 +55,8 @@ body {
 
 .hand {
     border-radius: 50%;
-    /* padding: 25px; */
+    box-shadow: 4px 4px 2px #7f7b7b56 inset;
+    padding: 20px;
     background-color: #fff;
     height: 150px;
     position: absolute;
@@ -63,37 +64,42 @@ body {
 
 .hand-image {
     position: relative;
-    top: 30px;
+    top: 10px;
     margin-right: 10px;
-    margin-left: 10px;
+    margin-left: 8px;
+    height: 60px;
 }
 .paper {
-    border: 15px solid hsl(230, 89%, 62%);
-    /* margin-right: 20px; */
+    border: 20px solid hsl(230, 89%, 62%);
+    margin-right: -130px;
     position: relative;
-    left: -200px;
+    left: -180px;
+    margin-top: -60px;
 
 }
 
 .scissors {
-    border: 15px solid hsl(39, 89%, 49%);
-    margin-left: 20px;
+    border: 20px solid hsl(39, 89%, 49%);
+    margin-left: 270px;
+    margin-top: -60px;
 }  
 
 .rock {
-    border: 15px solid hsl(349, 71%, 52%);
-    margin-left: 20px;
+    border: 20px solid hsl(349, 71%, 52%);
+    margin-left: 0px;
+    margin-top: 140px;   
 }
 
 .hands {
-    width: 443px;
-    height: 283px;
+    width: 270px;
+    height: 303px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 80px;
     background-image: url(/images/bg-triangle.svg);
     background-repeat: no-repeat;
+    background-size: 280px 230px;
     position: absolute;
     top: 240px;
 }
