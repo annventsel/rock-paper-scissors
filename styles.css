@@ -93,7 +93,7 @@ body {
 .hands {
     width: 270px;
     height: 303px;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 80px;
@@ -170,4 +170,73 @@ body {
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+.rslt {
+  position: relative;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.winner {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  
+}
+.middleText{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+.yourSide{
+  color: white;
+  border: 30px solid blue;
+  width: 250px;
+  height: 250px;
+}
+.yourSide_text {
+  padding-bottom: 30px;
+  padding-top: 60px;
+  color: white;
+  font-size: 10px;
+}
+.middlePart {
+  padding:15px;
+  color: white;
+}
+
+#winner_text {
+  font-size: 20px;
+}
+
+#playAgain_btn {
+  color:red;
+  width: 160px;
+  height: 40px;
+  background-color: white;
+  border-radius: 10px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+#imgHolder {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: white;
+}
+
+#imgHolderComputer {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: white;
+}
+.img {
+  width: 90px;
 }
