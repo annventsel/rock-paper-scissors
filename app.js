@@ -41,6 +41,8 @@ var glowRight = document.querySelector(".winnerGlow-right");
 var winnerText = document.getElementById("winner_text");
 const imageChanger = document.getElementById('computerSelectImageResult');
 const computerBorderColor = document.getElementById("imgHolderComputer");
+const yourSelectedImageChanger = document.getElementById('mySelectImageResult');
+const yourImageBorderColor = document.getElementById('imgHolder');
 var scoreText = document.getElementById("yourResultNumber");
 let count = 0;
 
@@ -56,6 +58,8 @@ document.getElementById("paperBtn").addEventListener('click', function () {
 
   /*show result Screen*/
   showResultScreen.classList.add('visible');
+  yourSelectedImageChanger.src = "/images/icon-paper.svg";
+  yourImageBorderColor.style.borderColor = 'blue';
   
 
   switch (computer) {
@@ -97,6 +101,8 @@ document.getElementById("scissorsBtn").addEventListener('click', function () {
 
   /*show result Screen*/
   showResultScreen.classList.add('visible');
+  yourSelectedImageChanger.src = "/images/icon-scissors.svg";
+  yourImageBorderColor.style.borderColor = 'orange';
 
   switch (computer) {
     case "paper":
@@ -137,6 +143,8 @@ document.getElementById("rockBtn").addEventListener('click', function () {
 
   /*show result Screen*/
   showResultScreen.classList.add('visible');
+  yourSelectedImageChanger.src = "/images/icon-rock.svg";
+  yourImageBorderColor.style.borderColor = 'red';
 
   switch (computer) {
     case "paper":
