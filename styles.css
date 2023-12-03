@@ -48,7 +48,7 @@ body {
     letter-spacing: 2px;
     line-height: 15px;
 }
-.score h1 {
+#yourResultNumber {
     color: hsl(229, 25%, 31%);
     font-size: 48px;
 }
@@ -174,17 +174,18 @@ body {
 }
 .rslt {
   position: relative;
-  display: none;
+  display: flex;
   align-items:center;
   justify-content: center;
   margin-top: 50px;
+  visibility: hidden;
 }
 
 .winnerGlow-right {
-  display:none;
+  visibility:hidden;
 }
 .winnerGlow-left {
-  display:none;
+  visibility:hidden;
 }
 #glow1 {
   position: absolute;
@@ -195,7 +196,7 @@ body {
   height: 350px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.030);
-  z-index: 2;
+  z-index: 4;
 }
 #glow2 {
   position: absolute;
@@ -206,7 +207,7 @@ body {
   height: 500px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.030);
-  z-index:3;
+  z-index:5;
 }
 
 #glow3 {
@@ -218,7 +219,7 @@ body {
   height: 700px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.030);
-  z-index:4;
+  z-index:6;
 }
 #glow4 {
   position: absolute;
@@ -229,7 +230,7 @@ body {
   height: 350px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.030);
-  z-index: 2;
+  z-index: 7;
 }
 #glow5 {
   position: absolute;
@@ -240,7 +241,7 @@ body {
   height: 500px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.030);
-  z-index:3;
+  z-index:8;
 }
 #glow6 {
   position: absolute;
@@ -251,7 +252,7 @@ body {
   height: 700px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.030);
-  z-index:4;
+  z-index:9;
 }
 .winner {
   display:flex;
@@ -270,7 +271,7 @@ body {
   width: 250px;
   height: 250px;
   box-shadow: 10px 10px 4px #7f7b7b56 inset;
-  z-index: 1;
+  z-index: 2;
 }
 .yourSide_text {
   padding-bottom: 30px;
@@ -284,11 +285,14 @@ body {
 }
 
 #winner_text {
-  font-size: 20px;
+  font-size: 30px;
+  letter-spacing: 2px;
 }
 
-#playAgain_btn {
+
+#playAgain {
   color:red;
+  cursor: pointer;
   width: 160px;
   height: 40px;
   background-color: white;
@@ -297,7 +301,10 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  letter-spacing: 2px;
 }
+
+
 #imgHolder {
   display:flex;
   align-items: center;
@@ -314,7 +321,17 @@ body {
   border-radius: 50%;
   background-color: white;
   border: 30px solid blue;
+  
 }
 .img {
   width: 90px;
+}
+.hidden {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+.winnerGlowVisiblity {
+  visibility: visible;
 }

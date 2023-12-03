@@ -24,18 +24,18 @@
       </div>
       <div class="score">
         <p>SCORE</p>
-        <h1>0</h1>
+        <div id="yourResultNumber">0</div>
       </div>
     </div>
-    <div class="hands">
+    <div id="hiding" class="hands">
       <div class="hand paper">
-        <img src="/images/icon-paper.svg" alt="" class="hand-image">
+        <img id="paperBtn" src="/images/icon-paper.svg" alt="" class="hand-image">
       </div>
-      <div class="hand scissors">
-        <img src="/images/icon-scissors.svg" alt="" class="hand-image">
+      <div id="scissors" class="hand scissors">
+        <img id="scissorsBtn" src="/images/icon-scissors.svg" alt="" class="hand-image">
       </div>
-      <div class="hand rock">
-        <img src="/images/icon-rock.svg" alt="" class="hand-image">
+      <div id="rock" class="hand rock">
+        <img id="rockBtn" src="/images/icon-rock.svg" alt="" class="hand-image">
       </div> 
     </div>
   </div>
@@ -57,11 +57,11 @@
       </div>
       <div class="winner">
         <div class="yourSide_text" id="textHolder"><h1>You Picked</h1></div>
-        <div class="yourSide" id="imgHolder"> <img class="img" src="/images/icon-paper.svg" alt="" class="rslt_img"></div>
+        <div class="yourSide" id="imgHolder"> <img class="img" id="mySelectImageResult"src="/images/icon-paper.svg" alt="" class="rslt_img"></div>
       </div>
       <div class="middleText">
-        <div class="middlePart" id="winner_text"><h1>YOU LOSE</h1></div>
-        <div class="middlePart" onclick="playAgain()" id="playAgain_btn"><p id="playAgain">PALY AGAIN</p></div>
+        <div class="middlePart" id="winner_text">YOU LOSE</div>
+        <button id="playAgain">PALY AGAIN</button>
       </div>
       <div class="winnerGlow-left">
         <div id="glow4"></div>
@@ -70,7 +70,7 @@
       </div>
       <div class="winner">
         <div class="yourSide_text" id="textHolderComputer"><h1>Computer Picked</h1></div>
-        <div class="yourSide" id="imgHolderComputer"> <img class="img" src="/images/icon-paper.svg" alt="" class="rslt_img"></div>
+        <div class="yourSide" id="imgHolderComputer"> <img id="computerSelectImageResult" class="img" class="rslt_img"></div>
       </div>
     </div>
   <div id="overlay"></div>
