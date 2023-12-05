@@ -72,7 +72,7 @@ document.getElementById("paperBtn").addEventListener('click', function () {
     case "rock":
       winnerText.textContent= "YOU WON";
       console.log("You won");
-      /*glowLeft.classList.add('winnerGlowVisiblity');*/
+      glowLeft.classList.add('winnerGlowVisiblity');
       imageChanger.src = "/images/icon-rock.svg";
       imgHolderComputer.style.borderColor = 'red';
       count++;
@@ -81,7 +81,7 @@ document.getElementById("paperBtn").addEventListener('click', function () {
     case "scissors":
       winnerText.textContent= "YOU LOSE";
       console.log("You lose");
-      /*glowRight.classList.add('winnerGlowVisiblity');*/
+      glowRight.classList.add('winnerGlowVisiblity');
       imageChanger.src = "/images/icon-scissors.svg";
       imgHolderComputer.style.borderColor = 'orange';
       count--;
@@ -108,7 +108,7 @@ document.getElementById("scissorsBtn").addEventListener('click', function () {
     case "paper":
       winnerText.textContent= "YOU WON";
       console.log("You won");
-      /*glowLeft.classList.add('winnerGlowVisiblity');*/
+      glowLeft.classList.add('winnerGlowVisiblity');
       imageChanger.src = "/images/icon-paper.svg";
       imgHolderComputer.style.borderColor = 'blue';
       count++;
@@ -117,7 +117,7 @@ document.getElementById("scissorsBtn").addEventListener('click', function () {
     case "rock":
       winnerText.textContent= "YOU LOSE";
       console.log("You lose");
-      /*glowRight.classList.add('winnerGlowVisiblity');*/
+      glowRight.classList.add('winnerGlowVisiblity');
       imageChanger.src = "/images/icon-rock.svg";
       imgHolderComputer.style.borderColor = 'red';
       count--;
@@ -150,7 +150,7 @@ document.getElementById("rockBtn").addEventListener('click', function () {
     case "paper":
       winnerText.textContent= "YOU LOSE";
       console.log("You lose");
-      /*glowRight.classList.add('winnerGlowVisiblity');*/
+      glowRight.classList.add('winnerGlowVisiblity');
       imageChanger.src = "/images/icon-paper.svg";
       imgHolderComputer.style.borderColor = 'blue';
       count--;
@@ -165,7 +165,7 @@ document.getElementById("rockBtn").addEventListener('click', function () {
     case "scissors":
       winnerText.textContent= "YOU WON";
       console.log("You won");
-      /*glowLeft.classList.add('winnerGlowVisiblity');*/
+      glowLeft.classList.add('winnerGlowVisiblity');
       imageChanger.src = "/images/icon-scissors.svg";
       imgHolderComputer.style.borderColor = 'orange';
       count++;
@@ -179,5 +179,6 @@ document.getElementById("rockBtn").addEventListener('click', function () {
 document.getElementById('playAgain').addEventListener('click' , function(){
   hideScreen.classList.remove('hidden');
   showResultScreen.classList.remove('visible');
-
+  glowLeft.classList.remove('winnerGlowVisiblity');
+  glowRight.classList.remove('winnerGlowVisiblity');
 })

@@ -196,7 +196,7 @@ body {
   height: 350px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.030);
-  z-index: 4;
+  z-index: -4;
 }
 #glow2 {
   position: absolute;
@@ -207,7 +207,7 @@ body {
   height: 500px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.030);
-  z-index:5;
+  z-index:-5;
 }
 
 #glow3 {
@@ -219,7 +219,7 @@ body {
   height: 700px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.030);
-  z-index:6;
+  z-index:-6;
 }
 #glow4 {
   position: absolute;
@@ -230,7 +230,7 @@ body {
   height: 350px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.030);
-  z-index: 7;
+  z-index: -7;
 }
 #glow5 {
   position: absolute;
@@ -241,7 +241,7 @@ body {
   height: 500px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.030);
-  z-index:8;
+  z-index:-8;
 }
 #glow6 {
   position: absolute;
@@ -252,7 +252,7 @@ body {
   height: 700px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.030);
-  z-index:9;
+  z-index:-9;
 }
 .winner {
   display:flex;
@@ -302,6 +302,7 @@ body {
   justify-content: center;
   cursor: pointer;
   letter-spacing: 2px;
+  z-index: 1;
 }
 
 
